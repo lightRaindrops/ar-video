@@ -2494,7 +2494,7 @@ ARjs.Context = THREEx.ArToolkitContext = function (parameters) {
 Object.assign(ARjs.Context.prototype, THREE.EventDispatcher.prototype);
 
 // default to github page
-ARjs.Context.baseURL = '/ar/'
+ARjs.Context.baseURL = '/ar-video/'
 ARjs.Context.REVISION = '3.3.3';
 
 /**
