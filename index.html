@@ -24,8 +24,6 @@
             color: white;
         }
     </style>
-    <script src="/ar-video/js/aframe-master.min.js"></script>
-    <script src="/ar-video/js/aframe-ar-nft.js"></script>
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -41,13 +39,15 @@
             </video>
         </a-assets>
 
-        <a-nft videohandler type='nft' url='/ar-video/assets/nft/NO1' smooth="true" smoothCount="10" smoothTolerance="0.01"
-            smoothThreshold="5">
+        <a-nft videohandler type='nft' url='/ar-video/assets/nft/NO1' smooth="true" smoothCount="10"
+            smoothTolerance="0.01" smoothThreshold="5">
             <a-video src="#vid" position='50 150 -100' rotation='90 0 180' width='300' height='175'>
             </a-video>
         </a-nft>
         <a-entity camera></a-entity>
     </a-scene>
+    <script src="/ar-video/js/aframe-master.min.js"></script>
+    <script src="/ar-video/js/aframe-ar-nft.js"></script>
     <script>
         window.onload = function () {
             AFRAME.registerComponent('videohandler', {
